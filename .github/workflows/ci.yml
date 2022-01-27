@@ -2,9 +2,10 @@ name: GitHub Action Pragmatic Programmer Bot
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
+    inputs:
+      holidays:
+        description: 'Holidays'
+        required: true
 
 jobs:
   bot:
@@ -38,4 +39,4 @@ jobs:
         env:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          HOLIDAYS: ${{ secrets.HOLIDAYS }}
+          HOLIDAYS: ${{ github.event.inputs.holidays }}

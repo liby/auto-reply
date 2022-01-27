@@ -4,11 +4,14 @@
 
 ## Usage
 
-- Settings / Secrets / Actions / Repository secrets
-    1. 设置 `TELEGRAM_CHAT_ID`，你可以使用 [@RawDataBot](https://t.me/RawDataBot) 来获取它
-    2. 设置 `TELEGRAM_TOKEN`，Telegram bot token
-    3. 设置 `HOLIDAYS`，格式为 `2020-01-01,2020-01-02,2020-01-03`（开始日期，结束日期，上班日期），上班日期可省略，默认为结束日期后一天。
+- 设置环境变量
+    1. 找到 Settings / Secrets / Actions / Repository secrets
+    2. 设置 `TELEGRAM_CHAT_ID`，你可以使用 [@RawDataBot](https://t.me/RawDataBot) 来获取它
+    3. 设置 `TELEGRAM_TOKEN`，Telegram bot token
 - Run workflow
+    1. 进到 Actions / All workflows / GitHub Action Pragmatic Programmer Bot
+    2. 点击 Run workflow
+    3. 设置 `HOLIDAYS`，格式为 `2020-01-01,2020-01-02,2020-01-03`（开始日期，结束日期，上班日期），上班日期可省略，默认为结束日期后一天。
 
 ## Templates
 
